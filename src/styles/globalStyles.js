@@ -10,10 +10,13 @@ box-sizing: border-box;
 outline: none;
 text-decoration: none;
 font-family: "Nunito", sans-serif;
+
+
 }
 
 body{
-    background:oklch(14.1% 0.005 285.823);
+    background:rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 
 
