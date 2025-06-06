@@ -9,9 +9,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
-  /* background-color: ${(props) =>
-    props.$chageBackground ? "#000" : "transparent"}; */
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.73) 90%,
+      rgb(0, 0, 0) 100%
+    );
   padding: 10px;
   transition: background-color 0.5s ease-in-out;
   backdrop-filter: ${(props) =>

@@ -20,7 +20,12 @@ export const Background = styled.div`
     left: 0;
     width: 100%;
     height: 103%;
-    background-color: rgba(0, 0, 0, 0.56);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.73) 80%,
+      rgb(0, 0, 0) 100%
+    );
   }
 `;
 
@@ -75,7 +80,6 @@ export const Poster = styled.div`
 export const ContainerSlide = styled.div`
   width: 100vw;
   max-width: 100vw;
- 
 
   h1 {
     text-align: center;
