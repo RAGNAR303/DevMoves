@@ -39,10 +39,12 @@ export const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+  width: 80%;
+  margin-left: 100px;
   max-width: 1500px;
-  margin-top: -100px;
+  margin-top: -250px;
   position: absolute;
-  z-index: 99;
+  z-index: 40;
 
   h1 {
     font-size: 3rem;
@@ -78,7 +80,7 @@ export const Cover = styled.div`
   height: 100%;
 
   img {
-    width: 300px;
+    width: 350px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(130, 130, 130, 0.57);
     animation: ${scale} 0.5s linear;
@@ -87,3 +89,13 @@ export const Cover = styled.div`
 export const Info = styled.div`
   color: #ffffff;
 `;
+
+export const ContainerVideos = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+margin-top: 400px;
+`;
+ 

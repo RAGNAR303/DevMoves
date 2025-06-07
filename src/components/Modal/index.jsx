@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Background, Container } from "./styles";
 import { getMovieVideos } from "../../services/getData";
+import { getVideo } from "../../utils/getVideos";
 
 function Modal({ movieId, setShowModal }) {
   const [movie, setMovie] = useState();
@@ -20,7 +21,7 @@ function Modal({ movieId, setShowModal }) {
       {movie && (
         <Container>
           <iframe
-            src={`https://www.youtube.com/embed/${movie.key}`}
+            src={getVideo(movie[0].key)}
             title="Youtube video play"
             height="350px"
             width="100%"

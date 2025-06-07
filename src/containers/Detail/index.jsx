@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Background, Container, Cover, Info } from "./styles";
+import { Background, Container, ContainerVideos, Cover, Info } from "./styles";
 import {
   getMovieCredit,
   getMovieDetail,
@@ -10,6 +10,8 @@ import {
 import { getImages } from "../../utils/getImages";
 import SpanGenres from "../../components/SpanGenres";
 import Credits from "../../components/Credits";
+import Videos from "../../components/Videos";
+import Slider from "../../components/Slider";
 
 function Detail() {
   const { id } = useParams();
@@ -50,17 +52,21 @@ function Detail() {
             </Cover>
             <Info>
               <h1>{movie.title}</h1>
-              <h2>{movie.vote_average} /10</h2>
-              <SpanGenres genres={movie.genres} />
+              <SpanGenres average={movie.vote_average} genres={movie.genres} />
               <p>{movie.overview}</p>
               <div>
                 <Credits credits={credit} />
               </div>
             </Info>
           </Container>
+          <ContainerVideos>
+            {detail && <Videos videos={detail} />}
+          </ContainerVideos>
+          {similar && <Slider info={similar} title={"Filmes Silimares"} />}
         </>
       )}
     </>
   );
 }
+
 export default Detail;
