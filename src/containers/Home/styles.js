@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const scale = keyframes`
+
+
+from{
+  transform: scale(0);
+
+}to {
+  transform: scale(1);
+}
+
+
+`;
 
 export const Background = styled.div`
   width: 100vw;
@@ -55,7 +68,6 @@ export const Info = styled.div`
     );
     background-clip: text;
     -webkit-background-clip: text;
-
     -webkit-text-fill-color: transparent;
   }
   p {
@@ -75,12 +87,13 @@ export const Poster = styled.div`
     width: 270px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(130, 130, 130, 0.57);
+    animation: ${scale} 0.5s linear;
   }
 `;
 export const ContainerSlide = styled.div`
   width: 100vw;
   max-width: 100vw;
-
+  margin: 0 20px;
   h1 {
     text-align: center;
     font-size: 3.5rem;

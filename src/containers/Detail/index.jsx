@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Container } from "./styles";
+import { Background, Container, Cover, Info } from "./styles";
 import {
   getMovieCredit,
   getMovieDetail,
   getMovieSimilar,
   getMovieVideos,
 } from "../../services/getData";
+import { getImages } from "../../utils/getImages";
+import SpanGenres from "../../components/SpanGenres";
+import Credits from "../../components/Credits";
 
 function Detail() {
   const { id } = useParams();
@@ -37,9 +40,27 @@ function Detail() {
   }, []);
 
   return (
-    <Container>
-      <div>Detalhes</div>
-    </Container>
+    <>
+      {movie && (
+        <>
+          <Background $image={getImages(movie.backdrop_path)} />
+          <Container>
+            <Cover>
+              <img src={getImages(movie.poster_path)} alt="image-poster" />
+            </Cover>
+            <Info>
+              <h1>{movie.title}</h1>
+              <h2>{movie.vote_average} /10</h2>
+              <SpanGenres genres={movie.genres} />
+              <p>{movie.overview}</p>
+              <div>
+                <Credits credits={credit} />
+              </div>
+            </Info>
+          </Container>
+        </>
+      )}
+    </>
   );
 }
 export default Detail;
