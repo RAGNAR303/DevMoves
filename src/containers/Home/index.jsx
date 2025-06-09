@@ -44,7 +44,7 @@ function Home() {
             popularSeries,
             popularPeople,
           ]) => {
-            setMovie(movie);
+            setMovie(movie[0]);
             setTopMovies(topMovies);
             setTopSeries(topSeries);
             setPopularMovies(popularMovies);
@@ -88,7 +88,7 @@ function Home() {
         {topMovies && (
           <>
             <h1>Filmes</h1>
-            <Slider info={topMovies} title={"Top Filmes"} />{" "}
+            <Slider info={topMovies} title={"Top Filmes"} />
           </>
         )}
         {popularMovies && (

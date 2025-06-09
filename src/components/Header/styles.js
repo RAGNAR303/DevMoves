@@ -12,7 +12,7 @@ export const Container = styled.div`
   background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.73) 90%,
+      rgba(0, 0, 0, 0.73) 70%,
       rgb(0, 0, 0) 100%
     );
   padding: 10px;

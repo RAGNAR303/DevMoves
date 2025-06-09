@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
- overflow-x: hidden;
   h2 {
     color: #ffffff;
     font-family: "Figtree", sans-serif;

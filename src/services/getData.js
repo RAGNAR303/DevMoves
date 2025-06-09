@@ -5,7 +5,15 @@ export async function getMovies() {
     data: { results },
   } = await api.get("/movie/popular");
 
-  return results[3];
+  return results.slice(0, 5);
+}
+
+export async function getSeries() {
+  const {
+    data: { results },
+  } = await api.get("/tv/top_rated");
+
+  return results;
 }
 
 export async function getTopMovies() {
@@ -68,6 +76,43 @@ export async function getMovieSimilar(movieId) {
 
 export async function getMovieDetail(movieId) {
   const { data } = await api.get(`/movie/${movieId}`);
+  return data;
+}
+
+export async function getNowPlaying() {
+  const {
+    data: { results },
+  } = await api.get("/movie/now_playing");
+
+  return results;
+}
+
+export async function getUpComing() {
+  const {
+    data: { results },
+  } = await api.get("/movie/upcoming");
+
+  return results;
+}
+
+export async function getAiringToday() {
+  const {
+    data: { results },
+  } = await api.get("/tv/airing_today");
+
+  return results;
+}
+
+export async function getOnTheAir() {
+  const {
+    data: { results },
+  } = await api.get("/tv/on_the_air");
+
+  return results;
+}
+
+export async function getDetailTv(seriesId) {
+  const { data } = await api.get(`/tv/${seriesId}`);
   return data;
 }
 

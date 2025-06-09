@@ -7,7 +7,7 @@ import { getVideo } from "../../utils/getVideos";
 
 function Modal({ movieId, setShowModal }) {
   const [movie, setMovie] = useState();
-
+console.log({movie})
   useEffect(() => {
     async function getMovies() {
       setMovie(await getMovieVideos(movieId));
