@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { getImages } from "../../utils/getImages";
 import { Container } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { BiPlayCircle } from "react-icons/bi";
 
 function Card({ item }) {
-  console.log({ item });
   const navigate = useNavigate();
   return (
     <Container>

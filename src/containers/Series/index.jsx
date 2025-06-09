@@ -18,7 +18,7 @@ function Series() {
   const [popularSeries, setPopularSeries] = useState();
   const [topSeries, setTopSeries] = useState();
 
-  console.log({ series });
+
   useEffect(() => {
     async function allSeries() {
       Promise.all([

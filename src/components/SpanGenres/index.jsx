@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "./styles";
 
 function SpanGenres({ genres, average }) {
-  console.log({ genres });
+ 
   return (
     <Container>
       {average && <span>{Math.round(average) } / 10 </span>}

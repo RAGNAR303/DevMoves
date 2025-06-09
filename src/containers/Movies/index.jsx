@@ -9,7 +9,7 @@ import {
 } from "../../services/getData";
 import Slider from "../../components/Slider";
 import { getImages } from "../../utils/getImages";
-import SpanGenres from "../../components/SpanGenres";
+
 import Modal from "../../components/Modal";
 
 function Movies() {
@@ -19,7 +19,7 @@ function Movies() {
   const [popularMovies, setPopularMovies] = useState();
   const [nowPlaying, setNowPlaying] = useState();
   const [upComing, setUpComing] = useState();
-  console.log({ showModal });
+
   useEffect(() => {
     async function allMovies() {
       Promise.all([

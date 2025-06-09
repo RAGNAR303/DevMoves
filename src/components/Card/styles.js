@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
   background: transparent;
@@ -33,17 +32,20 @@ export const Container = styled.div`
   }
 
   button {
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
     border: none;
+    border-radius: 50%;
     background: transparent;
     z-index: 2;
     position: absolute;
     transition: 0.5s ease-in-out;
     border-radius: 20px;
+
     top: 0;
     svg {
       fill: none;
@@ -51,9 +53,9 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-
+      transition: 0.5s ease-in-out;
       &:hover {
-        fill: rgba(255, 255, 255, 0.52);
+        fill: rgba(255, 0, 0, 0.78);
       }
     }
 

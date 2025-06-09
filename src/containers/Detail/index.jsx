@@ -30,7 +30,7 @@ function Detail() {
         getMovieSimilar(id),
       ])
         .then(([movie, detail, credits, similar]) => {
-          console.log({ movie, detail, credits, similar });
+         
           setMovieDetail(detail);
           setMovie(movie);
           setMovieCredit(credits);
