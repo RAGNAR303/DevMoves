@@ -62,7 +62,7 @@ function Movies() {
         {popularMovies && (
           <Slider info={popularMovies} title={"Filmes Populares"} />
         )}
-        {nowPlaying && <Slider info={nowPlaying} title={"Assita Agora"} />}
+        {nowPlaying && <Slider info={nowPlaying} title={"Assista Agora"} />}
         {upComing && <Slider info={upComing} title={"Em Lançamento"} />}
       </ContainerSlide>
     </Container>

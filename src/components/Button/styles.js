@@ -29,11 +29,12 @@ export const ButtonRed = styled.button`
   border: 2px solid rgb(153, 2, 2);
 
   &:hover {
-    border: 2px solid rgb(255, 2, 2);
-    box-shadow: 0px 0px 20px 8px rgba(255, 2, 2, 0.67);
-    background: rgb(255, 2, 2);
+    border: 2px solid rgb(201, 0, 0);
+    box-shadow: 0px 0px 15px 8px rgba(255, 2, 2, 0.67);
+    background: rgb(201, 0, 0);
     color: #ffffff;
   }
 `;
 
 
+ 

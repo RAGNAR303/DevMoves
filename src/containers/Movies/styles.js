@@ -33,7 +33,7 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
-  margin-top: -400px;
+  margin-top: -500px;
   margin-bottom: 300px;
   position: relative;
   width: 50%;
@@ -69,5 +69,5 @@ export const Info = styled.div`
 export const ContainerSlide = styled.div`
   position: relative;
   z-index: 40;
-  margin-top: -300px;
+  margin-top: -350px;
 `;
