@@ -5,7 +5,7 @@ DevMoves
 Interface de uma "copia" de uma NetFlix.
 <br>
 <br>
-Ultilazando conceitos de API , trazendo em metodos de uma API externa , para recriar uma pagína de filmes.
+Interface , pagína de filmes ultilazando conceitos de API , trazendo em metodos de uma API externa, para exibir informações dos filmes atualizada, com área de detalhes, e modal para ver o trailer.
 <br>
 <br>
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,react,vite,styledcomponents,yarn)](https://skillicons.dev)
