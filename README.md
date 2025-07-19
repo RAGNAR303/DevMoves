@@ -12,20 +12,20 @@ Interface , pagína de filmes ultilazando conceitos de API , trazendo em metodos
 <br>
 <br>
 
-Tela de Home,  
- ![{B0B099AB-C05E-401C-BE54-803B5128FA1D}](https://github.com/user-attachments/assets/c991eb24-02f9-48a3-931a-4244632387bb)
+<h1>Tela de Home</h1> 
+<img width="3795" height="1651" alt="{B0B099AB-C05E-401C-BE54-803B5128FA1D}" src="https://github.com/user-attachments/assets/c991eb24-02f9-48a3-931a-4244632387bb" />
 <br>
 <br>
-Slide de filmes,  
+<h1>Slide de filmes</h1>
 <br>
 <br>
-![{67008439-44CC-45E8-883F-621C22289735}](https://github.com/user-attachments/assets/9090c675-6777-4177-b6f2-ec959a128bce)
+<img alt={67008439-44CC-45E8-883F-621C22289735} src="https://github.com/user-attachments/assets/9090c675-6777-4177-b6f2-ec959a128bce"/>
 <br>
 <br>
-Area de detalhes do filmes
+<h1>Area de detalhes do filmes</h1>
 <br>
 <br>
-![{11DC8D25-439B-422B-B3C0-2C8A01D65D83}](https://github.com/user-attachments/assets/cb4e1f3c-8d63-41b2-84df-b40f05597b5c)
+<img alt={11DC8D25-439B-422B-B3C0-2C8A01D65D83}  src="https://github.com/user-attachments/assets/cb4e1f3c-8d63-41b2-84df-b40f05597b5c"/>
 <br>
 <br>
 
